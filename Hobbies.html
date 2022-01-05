@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hobbies</title>
+	<link rel="stylesheet" type="text/css" href="Hobbies.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<div class="Container">
+			<i class="fa fa-smile-o fa-5x" aria-hidden="true" size="70"></i>
+			<nav>
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Travel.html">Travel</a></li>
+					<li><a href="Goals.html">Goals</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header> 
+
+	
+	
+	<h1>HOBBIES</h1>
+
+	<div class="slideshow">
+		<div class="box" id="box">
+			<img src="Images/IMG_0042.jpeg">
+		</div>
+
+		<button class="prev" onclick="prevImage()">-</button>
+		<button class="next" onclick="nextImage()">+</button>
+
+	</div>
+
+	<div class="Basketball">
+		<div class="icon"><i class="icofont-basketball"></i></div>
+			<div class="content">
+				<h2>Basketball</h2>
+				<p>One of the things I enjoy in my free time is playing basketball. When I was 7 years old, I was an outsider because I had just moved from the Philippines. Basketball helped me become who I am and interact with people. Not only has it given me friends but it has also taught me a lot of things outside the court like teamwork, competetiveness, and calmness.</p>
+				<br>
+
+				<i class="fa fa-star fa-5x" aria-hidden="true" size="70"></i>
+
+				<hr>
+				
+				<h2>Longboarding</h2>
+				<p>Another hobby that I enjoy very much is longboarding. I started longboarding just a year a ago and I love doing it. Wether it's going down deep hills or just casually strolling downtown Boise it's so much fun!</p>
+				<br>
+
+				<i class="fa fa-bicycle fa-5x" aria-hidden="true" size="70"></i>
+
+				<hr>
+
+				<h2>Photography</h2>
+				<p>I don't get to quite do this a lot but one of the things I enjoy is photography. Being able to capture the beauty in things that we take think is regualr is an amazing feeling!</p>
+				<br>
+
+				<i class="fa fa-camera-retro fa-5x" aria-hidden="true" size="70"></i>
+
+				<hr>
+
+				<h2>NBA 2K</h2>
+				<p>I am a 2k addict. The reason is in the game, we get to create our own character and play against other players in the world. Also it is very entertaining to talk trash at the other team. </p>
+				<br>
+
+				<i class="fa fa-gamepad fa-5x" aria-hidden="true" size="70"></i>
+
+
+				<h2 class="quotes">If you are losing your leisure, look out! -- It may be you are losing your soul.</h2>
+
+
+			</div>
+	</div>
+
+	
+
+	<script type="text/javascript">
+		var slideshow_content = document.getElementById('box');
+		var image = ['Images/IMG_0042.jpeg','Images/IMG_0024.jpeg','Images/IMG_0152.jpg','Images/NBA2K.jpg'];
+		var i = image.length;
+
+		
+		function nextImage()
+		{
+			if (i<image.length)
+			{
+				i = i+1;
+			}
+			else
+			{
+				i = 1;
+			}
+			slideshow_content.innerHTML = "<img src="+image[i-1]+">";
+		}
+
+		function prevImage()
+		{
+			if (i<image.length+1 && i>1)
+			{
+				i = i-1;
+			}
+			else
+			{
+				i = image.length;
+			}
+			slideshow_content.innerHTML = "<img src="+image[i-1]+">";
+		}
+	</script>
+
+	
+
+
+
+
+
+</body>
+</html>

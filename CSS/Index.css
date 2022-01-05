@@ -1,0 +1,206 @@
+body
+{
+	margin; 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: black;
+}
+
+.T1
+{
+	font-size: 80px;
+	text-align: center;
+	color: #002A53;
+}
+
+.container
+{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 120px auto;
+}
+
+.container .box
+{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #002A53;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.container .box .icon
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.container .box:hover .icon
+{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.container .box .icon .fa
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.container .box:hover .icon .fa
+{
+	font-size: 40px;
+}
+
+.container .box .content
+{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .box:hover .content
+{
+	top: 100px;
+	opacity: 1;
+}
+
+.container .box .content h3
+{
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 30px;
+}
+
+.container .box .content p
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+}
+
+.container .box:nth-child(1) .icon
+{
+	background: #4285F4;
+}
+
+.container .box:nth-child(1)
+{
+	background: #4285F4;
+}
+
+.container .box:nth-child(2) .icon
+{
+	background: #0F9D58;
+}
+
+.container .box:nth-child(2)
+{
+	background: #0F9D58;
+}
+
+.container .box:nth-child(3) .icon
+{
+	background: #DB4437;
+}
+
+.container .box:nth-child(3)
+{
+	background: #DB4437;
+}
+
+
+.T2
+{
+	color: black;
+	font-size: 80px;
+	text-align: center;
+}
+
+.T2 .average
+{
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+
+.B
+{
+	color: #4285F4;
+}
+
+.B1
+{
+	color: #4285F4;
+	font-size: 100px;
+	font-weight: 700;
+}
+
+
+.R
+{
+	color: #DB4437;
+}
+
+.R1
+{
+	color: #DB4437;
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.Y
+{
+	color: #F4B400;
+}
+
+.Y1
+{
+	color: #F4B400;
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.G
+{
+	color: #0F9D58;
+}
+
+.G1
+{
+	color: #0F9D58;
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.regular
+{
+	color: white;
+	font-size: 50px;
+}
+

@@ -1,0 +1,209 @@
+body
+{
+	margin; 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #FF7373;
+}
+
+.Title
+{
+	font-size: 80px;
+	text-align: center;
+	color: #002A53;
+}
+
+.container
+{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 120px auto;
+}
+
+.container .box
+{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #002A53;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.container .box .icon
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.container .box:hover .icon
+{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.container .box .icon .fa
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.container .box:hover .icon .fa
+{
+	font-size: 40px;
+}
+
+.container .box .content
+{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .box:hover .content
+{
+	top: 100px;
+	opacity: 1;
+}
+
+.container .box .content h3
+{
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 30px;
+}
+
+.container .box .content p
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+}
+
+.container .box:nth-child(1) .icon
+{
+	background: #FFF664;
+}
+
+.container .box:nth-child(1)
+{
+	background: #FFF664;
+}
+
+.container .box:nth-child(2) .icon
+{
+	background: #D0C2FF;
+}
+
+.container .box:nth-child(2)
+{
+	background: #D0C2FF;
+}
+
+.container .box:nth-child(3) .icon
+{
+	background: #FFE189;
+}
+
+.container .box:nth-child(3)
+{
+	background: #FFE189;
+}
+
+
+.Container
+{
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+
+header::after
+{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav
+{
+	float: right;
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	margin-left: 70px; 
+	padding-top: 30px;
+	position: relative;
+}
+
+nav a
+{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover
+{
+	color: white;
+}
+
+nav a::before
+{
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before
+{
+	width: 100%;
+}
+
+.fa
+{
+	margin-top: 10px;
+}
+

@@ -1,0 +1,193 @@
+body
+{
+	margin: 0;
+	background: white;
+	background-image: url(Beauty.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.Container
+{
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+header
+{
+	background:  #8c92ac;
+	opacity: 0.6;
+}
+
+header::after
+{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav
+{
+	float: right;
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	margin-left: 70px; 
+	padding-top: 30px;
+	position: relative;
+}
+
+nav a
+{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover
+{
+	color: white;
+}
+
+nav a::before
+{
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before
+{
+	width: 100%;
+}
+
+.Container2
+{
+	width: 1280px;
+	min-height: 500px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.Container2 .box
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+
+}
+
+.Container2 .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.Container2 .box .imgBox img
+{
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+	transition: transform 2s;
+}
+
+.Container2 .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+
+.Container2 .box .Caption
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.6);
+	transform: scaleY(0);
+	transition: transform .5s;
+
+}
+
+.Container2 .box:hover .Caption
+{
+	transform: scaleY(1);
+}
+
+.Container2 .box .Caption .content
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+.Container2 .box .Caption .content h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.Container2 .box .Caption .content p
+{
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+.Title
+{
+	font-size: 40px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.subTitlePH
+{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	color: white;
+}
+
+.Center
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fa
+{
+	margin-top: 10px;
+}
